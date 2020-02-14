@@ -8,7 +8,19 @@ namespace FebruaryContestEntry
 
 		static void Main(string[] args)
 		{
-			// The solution implementation goes here
+			int width = 30;
+			int height = 15;         
+			for (int y = 0; y < height; y++)
+			{
+				for (int x = 0; x < width; x++)
+				{
+					Console.BackgroundColor = ConsoleColor.Yellow;
+					if (x == 0 || x == width - 1 || y == 0 || y == height - 1)
+						Console.BackgroundColor = ConsoleColor.Green;
+			    		Console.Write(block);
+				}
+				Console.WriteLine();
+			}
 
 			Console.ResetColor();
 			Console.WriteLine();
